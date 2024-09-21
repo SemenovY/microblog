@@ -12,6 +12,7 @@ from app.models import User
 
 @app.route("/")  # главная страница - / (без пути)
 @app.route("/index")  # главная страница - /index (по умолчанию)
+@login_required
 def index():
     """
     This function is a view function that handles the main page of the application. It is decorated with @app.route("/") and @app.route("/index") to specify the URLs that this function will handle.
